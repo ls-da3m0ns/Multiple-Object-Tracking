@@ -3,6 +3,8 @@
  * By default it tracks Cars Trucks and Bus but can be expanded easily to cycles bikes also 
  * Siamese Network is trained on Nvidia AI City Challege Data and VeRI Wild Dataset
 
+## Demo Video 
+[<img src=".github/demo.png" width="50%">](https://drive.google.com/file/d/1aVlaJogjbz8Q8KUvc3_b4ybravZwiPGT/view?usp=sharing)
 
 ## Steps to run tracker on custom Video
  * Download Yolov5 weights from this link https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5x6.pt
