@@ -1,0 +1,6 @@
+object_tracking/ckpts/model0.pt
+object_tracking/ckpts/model600.pt
+object_tracking/ckpts/model640.pt
+yolov5/weights/yolov5x6.pt
+*.mp4
+/gdrive/MyDrive/car_tracking/car_tracking/yolov5/runs/*
