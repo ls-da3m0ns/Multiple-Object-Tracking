@@ -6,7 +6,7 @@
 ## Demo Video 
 <br>
 <div align="center">
-Demo [<img src=".github/demo.png" width="50%">](https://drive.google.com/file/d/1aVlaJogjbz8Q8KUvc3_b4ybravZwiPGT/view?usp=sharing)
+[<img src=".github/demo.png" width="50%">](https://drive.google.com/file/d/1aVlaJogjbz8Q8KUvc3_b4ybravZwiPGT/view?usp=sharing)
 </div>
 
 ## Steps to run tracker on custom Video
