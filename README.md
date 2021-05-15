@@ -1,7 +1,11 @@
-# DeepSort_with_yolov5
- * This Project is built on top of https://github.com/abhyantrika/nanonets_object_tracking and add yolov5 for detection of vehicals
- * By default it tracks Cars Trucks and Bus but can be expanded easily to cycles bikes also 
- * Siamese Network is trained on Nvidia AI City Challege Data and VeRI Wild Dataset
+# Multi Object Tracking
+ * Track just about anything that detectors can detect
+ * Currently its using yolov5 for detections and Deepsort with Siamese Network for tracking
+ * Siamese Network is trained on Nvidia AI City Challege Data (640 epochs) and VeRI Wild Dataset (33 epochs) pretrainied weights are provided
+
+ * This Project is built on top of https://github.com/abhyantrika/nanonets_object_tracking and adds detector and capabilities to inference on video/live_feed 
+ * Currently feature extracter is trained to extract features for vehicals but can be easily trained for other task also
+
 
 ## Demo Video 
 <br>
@@ -21,13 +25,14 @@
     ```
 ## Training steps 
  * Download dataset and save it in ``` object_tracking/datasets/train ``` and ``` object_tracking/datasets/test ``` (make sure format of data is correct i.e train/car_id/**images)
- * ```cd object_tracking``` and then  ```python siamese_train.py```
- * Default config is batch_size = 256, epoch = 40 and save_checkpoint after 10 epochs which can be altered as required 
- * loss will be saved at ```ckpts/loss.png``` after training is finished
+ * change default config
+ * ```python siamese_train.py```
 
 ## Get Test Scores 
- * Download dataset and save it in ``` object_tracking/datasets/train ``` and ``` object_tracking/datasets/test ``` (make sure format of data is correct i.e train/car_id/**images)
- * ```cd object_tracking``` and then  ```python siamese_test.py```
+ * ```python siamese_test.py```
+
+## Limitations
+ * Beaware this dose not reid the object with same id if its out of frame for long interval of time 
 ## Refrences 
  * Siamese Net https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
  * DeepSort Paper https://arxiv.org/abs/1703.07402
